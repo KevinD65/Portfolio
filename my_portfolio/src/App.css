@@ -1,12 +1,43 @@
+:root { /*global CSS variables*/
+  --main-bg-color: #282c34;
+  --main-border-color: #f0ffff;
+  --main-font:'Courier New', Courier, monospaces;
+}
+
 .App {
+  height: 100vh; /*sets the height of the app component to browser height*/
+}
+
+.TopBanner {
+  height: 20%;
+  width: 100%;
+  
+  background-color: var(--main-bg-color);
+}
+
+.TopBannerInner {
+  height: 70%;
+  width: 40%;
+
+  margin-left: 30%;
+  margin-top: 1%; /*margin percentages are relative to the container width*/
+  display:inline-block;
+  position: relative;
+
   text-align: center;
+
+  border-style:inset;
+  border-color: var(--main-border-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#topbannerinner-text{
+  margin-top: 3%;
+  font-size:xx-large;
+  color:var(--main-border-color);
+  font-family:var(--main-font);
 }
 
+/*
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +66,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/
