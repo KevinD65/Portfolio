@@ -6,13 +6,12 @@
 
 .App {
   height: 100vh; /*sets the height of the app component to browser height*/
+  background-color: var(--main-bg-color);
 }
 
 .TopBanner {
   height: 20%;
   width: 100%;
-  
-  background-color: var(--main-bg-color);
 }
 
 .TopBannerInner {
@@ -35,6 +34,26 @@
   font-size:xx-large;
   color:var(--main-border-color);
   font-family:var(--main-font);
+}
+
+.TopNavbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 30%;
+  margin-left: 35%;
+}
+
+.navbar-component{  
+  color:var(--main-border-color);
+  font-family:var(--main-font);
+
+  padding-left: 3%;
+  padding-right: 3%;
+
+  border-style:inset;
+  border-color: var(--main-border-color);
 }
 
 /*

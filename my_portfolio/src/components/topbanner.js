@@ -1,6 +1,6 @@
 import TopBannerInner from "./topbannerinner";
 
-function TopBanner() {
+const TopBanner = () => {
   return (
     <div className="TopBanner">
         <TopBannerInner/>
