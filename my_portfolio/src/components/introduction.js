@@ -1,7 +1,7 @@
 
 const Introduction = () => {
     return (
-      <div></div>
+      <div>THIS IS THE INTRODUCTION COMPONENT</div>
     );
   }
   
