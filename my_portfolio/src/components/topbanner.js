@@ -1,3 +1,4 @@
+import React from "react";
 import TopBannerInner from "./topbannerinner";
 
 const TopBanner = () => {

@@ -1,5 +1,6 @@
 import './App.css';
 import React, {useState} from 'react';
+
 import TopBanner from './components/topbanner';
 import TopNavbar from './components/topnavbar';
 import DataDisplay from './components/datadisplay';
@@ -24,6 +25,7 @@ function App() {
       case "contact":
         changeDataDisplay("contact");
         break;
+      default:
     }
   }
 
