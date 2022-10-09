@@ -1,7 +1,8 @@
+import React from "react";
 
 const Projects = () => {
     return (
-      <div></div>
+      <div>THIS IS THE PROJECTS COMPONENT</div>
     );
   }
   

@@ -1,39 +1,15 @@
 import './App.css';
-import React, {useState} from 'react';
-
-import TopBanner from './components/topbanner';
-import TopNavbar from './components/topnavbar';
-import DataDisplay from './components/datadisplay';
+import React from 'react'; //import without brackets since React is the default export in the react module
+import { Routes, Route } from 'react-router-dom';
+import Landing from './components/landing';
 
 function App() {
-  const[currentDataDisplayed, changeDataDisplay] = useState("landing"); //landing, introduction, projects, contact me
-
-  /**
-   * Changes the data display state so respective data can be displayed to the screen
-   */
-  const changeDataDisplayState = (newState) => {
-    switch(newState){
-      case "landing":
-        changeDataDisplay("landing");
-        break;
-      case "intro":
-        changeDataDisplay("intro");
-        break;
-      case "project":
-        changeDataDisplay("project");
-        break;
-      case "contact":
-        changeDataDisplay("contact");
-        break;
-      default:
-    }
-  }
 
   return (
     <div className="App">
-      <TopBanner/>
-      <TopNavbar changeDataDisplay = {changeDataDisplayState}/>
-      <DataDisplay currentDataDisplay ={currentDataDisplayed} changeDataDisplay = {changeDataDisplay}/>
+      <Routes>
+        <Route path="/*" element={<Landing />} />
+      </Routes>
     </div>
   );
 }

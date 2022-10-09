@@ -1,7 +1,8 @@
+import React from "react";
 
 const ContactMe = () => {
     return (
-      <div></div>
+      <div>THIS IS THE CONTACTS COMPONENT</div>
     );
   }
   
