@@ -1,5 +1,6 @@
 :root { /*global CSS variables*/
   --main-bg-color: #282c34;
+  --lightenedmain-bg-color:#4f566287;
   --main-border-color: #f0ffff;
   --main-font:'Courier New', Courier, monospaces;
 }
@@ -20,6 +21,8 @@
 
   margin-left: 30%;
   margin-top: 1%; /*margin percentages are relative to the container width*/
+  margin-bottom: 1%;
+  padding-bottom: 1%;
   display:inline-block;
   position: relative;
 
@@ -54,6 +57,10 @@
 
   border-style:inset;
   border-color: var(--main-border-color);
+}
+
+.navbar-component:hover{
+  background-color: var(--fadedmain-bg-color);
 }
 
 /*

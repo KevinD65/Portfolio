@@ -2,7 +2,9 @@ import React from "react";
 
 const Introduction = () => {
     return (
-      <div>THIS IS THE INTRODUCTION COMPONENT</div>
+      <div id="intro-text-Container">
+        
+      </div>
     );
   }
   

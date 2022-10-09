@@ -1,6 +1,7 @@
 import '../App.css';
 
 import React, {useState, useEffect} from 'react';
+import profilePicture from '../assets/profilePicture.JPG';
 
 import TopBanner from './topbanner';
 import TopNavbar from './topnavbar';
@@ -9,7 +10,6 @@ import Projects from './projects';
 import ContactMe from './contact';
 
 import { Routes, Route, useNavigate } from "react-router-dom";
-
 
 /**
  * Routing to all pages throughout the application
@@ -59,8 +59,6 @@ function Landing() {
     }
   };
 
-  //console.log(currentDataDisplayed);
-
   //DETERMINES THE URL PATH BASED ON WHAT DATA IS BEING DISPLAYED ON THE SCREEN
   let path;
   if(currentDataDisplayed !== undefined && currentDataDisplayed !== "landing"){
@@ -81,6 +79,7 @@ function Landing() {
       <TopBanner/>
       <TopNavbar changeDataDisplay = {changeDataDisplayState}/>
       <Routes>
+        <Route path="/" element={<img src={profilePicture} alt="Oops! Couldn't Load Content." id="profilePicture"/>}/>
         <Route path="intro/" element={<Introduction />}/>
         <Route path="projects/" element={<Projects />}/>
         <Route path="contact/" element={<ContactMe />}/>
